@@ -15,7 +15,8 @@ import (
 // to second resolution in UTC. For example:
 //   2016-07-02 15:04:05
 func DefaultFormatter(entry Entry) string {
-	ts := entry.Timestamp.In(time.UTC).Format("2006-01-02 15:04:05")
+	//ts := entry.Timestamp.In(time.UTC).Format("2006-01-02 15:04:05")
+	ts := entry.Timestamp.In(time.Local).Format("2006-01-02 15:04:05")
 	// Just get the basename from the filename
 	filename := filepath.Base(entry.Filename)
 	return fmt.Sprintf("%s %s %s %s:%d %s", ts, entry.Level, entry.Module, filename, entry.Line, entry.Message)
