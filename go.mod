@@ -1,4 +1,4 @@
-module github.com/juju/loggo
+module github.com/alst-ovh/loggo
 
 go 1.14
 
