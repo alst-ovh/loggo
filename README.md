@@ -1,6 +1,6 @@
 
 # loggo
-    import "github.com/juju/loggo"
+    import "github.com/alst-ovh/loggo"
 
 [![GoDoc](https://godoc.org/github.com/juju/loggo?status.svg)](https://godoc.org/github.com/juju/loggo)
 
